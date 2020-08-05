@@ -98,6 +98,8 @@ namespace ClassDemo
             ArraysLists arr = new ArraysLists();
             arr.PrintFirstElement(arr.TheArray);
 
+            arr.PrintFirstElement(arr.TheList);
+
             // Access non static members from StaticClass external class
             StaticClass nonStaticMembers = new StaticClass();
             Console.WriteLine(nonStaticMembers.message);

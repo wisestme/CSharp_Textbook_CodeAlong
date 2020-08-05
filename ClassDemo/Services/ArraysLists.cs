@@ -25,5 +25,24 @@ namespace ClassDemo.Services
                 myArray = value;
             }
         }
+
+        public void PrintFirstElement(List<int> a)
+        {
+            Console.WriteLine("The first element is {0} \n", a[0]);
+        }
+
+        List<int> myList = new List<int> { 5, 2, 3 };
+
+        public List<int> TheList
+        {
+            get
+            {
+                return myList;
+            }
+            set
+            {
+                myList = value;
+            }
+        }
     }
 }
