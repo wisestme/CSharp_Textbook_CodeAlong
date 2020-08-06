@@ -111,6 +111,8 @@ namespace ClassDemo
                 Console.Write(item + ", " );
             }
 
+            arr.PrintNames("Chijioke", "Gloria", "Wisest");
+
             // Access non static members from StaticClass external class
             StaticClass nonStaticMembers = new StaticClass();
             Console.WriteLine(nonStaticMembers.message);

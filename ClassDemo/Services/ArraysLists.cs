@@ -75,6 +75,14 @@ namespace ClassDemo.Services
             return l;
         }
 
+        public void PrintNames(params string[] names)
+        {
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.Write(names[i] + " ");
+            }
+            Console.WriteLine();
+        }
         
     }
 }
