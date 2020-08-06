@@ -103,6 +103,14 @@ namespace ClassDemo
             int[] myNewArray = arr.ReturnUserInput();
             Console.WriteLine(myNewArray);
 
+            var myNewList = arr.ReturnUserInputList();
+            //Console.WriteLine(myNewList);
+
+            foreach(var item in myNewList)
+            {
+                Console.Write(item + ", " );
+            }
+
             // Access non static members from StaticClass external class
             StaticClass nonStaticMembers = new StaticClass();
             Console.WriteLine(nonStaticMembers.message);

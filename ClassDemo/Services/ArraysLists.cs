@@ -59,6 +59,22 @@ namespace ClassDemo.Services
             return a;
         }
 
+        public List<int> ReturnUserInputList()
+        {
+            List<int> l = new List<int>();
+            int input;
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.Write("Enter an integer: ");
+                input = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("integer added to list. \n");
+                l.Add(input);
+            }
+
+            return l;
+        }
+
         
     }
 }
