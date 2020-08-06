@@ -44,5 +44,21 @@ namespace ClassDemo.Services
                 myList = value;
             }
         }
+
+        public int[] ReturnUserInput()
+        {
+            int[] a = new int[3];
+
+            for(int i = 0; i < a.Length; i++)
+            {
+                Console.Write("Enter an integer: ");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Integer added to array. \n");
+            }
+
+            return a;
+        }
+
+        
     }
 }

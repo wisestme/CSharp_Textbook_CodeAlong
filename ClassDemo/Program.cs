@@ -100,6 +100,9 @@ namespace ClassDemo
 
             arr.PrintFirstElement(arr.TheList);
 
+            int[] myNewArray = arr.ReturnUserInput();
+            Console.WriteLine(myNewArray);
+
             // Access non static members from StaticClass external class
             StaticClass nonStaticMembers = new StaticClass();
             Console.WriteLine(nonStaticMembers.message);
