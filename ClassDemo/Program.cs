@@ -95,6 +95,19 @@ namespace ClassDemo
     {
         static void Main()
         {
+            int v = 2;
+            int[] r = { 1, 2, 3, };
+
+            ValueAndReference valRef = new ValueAndReference();
+            Console.WriteLine("v before = {0}", v);
+            valRef.PassByValue(v);
+            Console.WriteLine("v before = {0}", v);
+            Console.WriteLine("\n\n");
+
+            Console.WriteLine("r[0] before = {0}", r[0]);
+            valRef.PassByReference(r);
+            Console.WriteLine("r[0] after = {0}", r[0]);
+
             ArraysLists arr = new ArraysLists();
             arr.PrintFirstElement(arr.TheArray);
 
