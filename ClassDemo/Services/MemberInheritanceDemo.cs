@@ -13,13 +13,6 @@ namespace ClassDemo.Services
         private int memberID;
         private int memberSince;
 
-        public override string ToString()
-        {
-            return "\nName: " + name + "\nMember ID: " + memberID +
-                "\nMember Since: " + memberSince + "\nTotal Annual Fee: " +
-                annualFee;
-        }
-
         public MemberInheritanceDemo()
         {
             Console.WriteLine("Parent Constructor with no parameter");
@@ -27,11 +20,18 @@ namespace ClassDemo.Services
 
         public MemberInheritanceDemo(string pName, int pMemberID, int pMemberSince)
         {
-            Console.WriteLine("Parent Constructor with no parameter");
+            Console.WriteLine("Parent Constructor with parameters");
 
             name = pName;
             memberID = pMemberID;
             memberSince = pMemberSince;
+        }
+
+        public override string ToString()
+        {
+            return "\nName: " + name + "\nMember ID: " + memberID +
+                "\nMember Since: " + memberSince + "\nTotal Annual Fee: " +
+                annualFee;
         }
     }
 
@@ -52,6 +52,14 @@ namespace ClassDemo.Services
         {
             annualFee = 100 + 12 * 30;
             Console.WriteLine(annualFee);
+        }
+    }
+
+    public class vipMember : MemberInheritanceDemo
+    {
+        public vipMember()
+        {
+            Console.WriteLine("Second child constructor with no parameter");
         }
     }
 }
