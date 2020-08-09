@@ -55,11 +55,21 @@ namespace ClassDemo.Services
         }
     }
 
-    public class vipMember : MemberInheritanceDemo
+    public class VipMember : MemberInheritanceDemo
     {
-        public vipMember()
+        public VipMember()
         {
             Console.WriteLine("Second child constructor with no parameter");
+        }
+
+        public VipMember(string name, int memberID, int memberSince)
+        {
+            Console.WriteLine("Second child constructor with parameters");
+        }
+
+        public void CalculateAnnualFee()
+        {
+            annualFee = 1200;
         }
     }
 }

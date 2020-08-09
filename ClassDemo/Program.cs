@@ -97,6 +97,7 @@ namespace ClassDemo
         {
             MemberInheritanceDemo gymUser = new MemberInheritanceDemo();
             RegularMember gymer = new RegularMember("very good", "Chijioke", 40, 50);
+            VipMember vipGymer = new VipMember();
             gymer.CalculateAnnualFee();
             Console.WriteLine(gymer.ToString());
 
