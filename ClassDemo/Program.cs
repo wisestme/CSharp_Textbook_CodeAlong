@@ -95,8 +95,24 @@ namespace ClassDemo
     {
         static void Main()
         {
-            MemberPoly polyMember = new MemberPoly();
-            Console.WriteLine(polyMember.ToString());
+            MemberPoly[] gymMembers = new MemberPoly[5];
+
+            gymMembers[0] = new RegularMemberPoly("Good member", "Tochukwu", 03, 2017);
+            gymMembers[1] = new RegularMemberPoly("Good member", "Stanley", 04, 2019);
+            gymMembers[2] = new VIPMemberPoly("Chijioke", 01, 2010);
+            gymMembers[3] = new VIPMemberPoly("Marvellous", 02, 2017);
+            gymMembers[4] = new VIPMemberPoly("Idam", 05, 2020);
+
+            foreach (MemberPoly m in gymMembers)
+            {
+                m.CalculateAnnualFee();
+                Console.WriteLine(m.ToString());
+                if (m.GetType() == typeof(VIPMemberPoly))
+                    Console.WriteLine("yes, VIP");
+                else
+                    Console.WriteLine("no, not VIP");
+            }
+
 
             MemberInheritanceDemo gymUser = new MemberInheritanceDemo();
             RegularMember gymer = new RegularMember("very good", "Chijioke", 40, 50);
