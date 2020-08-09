@@ -95,6 +95,11 @@ namespace ClassDemo
     {
         static void Main()
         {
+            //AbstractImplementation ab = new AbstractImplementation();
+            AbstractImplementation.NonAbstractClass nab = new AbstractImplementation.NonAbstractClass();
+            nab.PrintMessage();
+            nab.PrintMessageAbstract();
+
             MemberPoly[] gymMembers = new MemberPoly[5];
 
             gymMembers[0] = new RegularMemberPoly("Good member", "Tochukwu", 03, 2017);
