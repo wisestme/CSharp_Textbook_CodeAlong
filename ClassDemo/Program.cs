@@ -95,6 +95,9 @@ namespace ClassDemo
     {
         static void Main()
         {
+            MemberPoly polyMember = new MemberPoly();
+            Console.WriteLine(polyMember.ToString());
+
             MemberInheritanceDemo gymUser = new MemberInheritanceDemo();
             RegularMember gymer = new RegularMember("very good", "Chijioke", 40, 50);
             VipMember vipGymer = new VipMember();
