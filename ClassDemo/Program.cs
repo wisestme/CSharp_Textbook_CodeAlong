@@ -95,6 +95,10 @@ namespace ClassDemo
     {
         static void Main()
         {
+            MemberInheritanceDemo gymUser = new MemberInheritanceDemo();
+            RegularMember gymer = new RegularMember();
+            gymer.CalculateAnnualFee();
+
             int v = 2;
             int[] r = { 1, 2, 3, };
 
