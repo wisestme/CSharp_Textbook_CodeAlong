@@ -47,6 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AbstractImplementation.cs" />
     <Compile Include="Services\ArraysLists.cs" />
+    <Compile Include="Services\InterfaceImplementation.cs" />
+    <Compile Include="Services\InterfaceWisest.cs" />
     <Compile Include="Services\MemberInheritanceDemo.cs" />
     <Compile Include="Services\MemberPoly.cs" />
     <Compile Include="Services\StaticClass.cs" />

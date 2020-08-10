@@ -95,6 +95,13 @@ namespace ClassDemo
     {
         static void Main()
         {
+            Customer c1 = new Customer();
+            Customer2 c2 = new Customer2();
+
+            c1.Print();
+            c2.Print();
+
+
             //AbstractImplementation ab = new AbstractImplementation();
             AbstractImplementation.NonAbstractClass nab = new AbstractImplementation.NonAbstractClass();
             nab.PrintMessage();
