@@ -95,6 +95,10 @@ namespace ClassDemo
     {
         static void Main()
         {
+            ClassA interfaceClass = new ClassA();
+            interfaceClass.MyNumber = 10;
+            interfaceClass.InterfaceMethod();
+
             Customer c1 = new Customer();
             Customer2 c2 = new Customer2();
 

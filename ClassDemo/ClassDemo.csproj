@@ -51,6 +51,7 @@
     <Compile Include="Services\InterfaceWisest.cs" />
     <Compile Include="Services\MemberInheritanceDemo.cs" />
     <Compile Include="Services\MemberPoly.cs" />
+    <Compile Include="Services\Shape.cs" />
     <Compile Include="Services\StaticClass.cs" />
     <Compile Include="Services\ValueAndReference.cs" />
   </ItemGroup>
