@@ -12,6 +12,9 @@ namespace ProfessionalCSharp
         static void Main()
         {
             snippet1.variables();
+
+            ScopeClashes.TestScoping();
+
         }
     }
 }
