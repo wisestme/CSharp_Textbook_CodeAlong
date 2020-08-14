@@ -13,17 +13,27 @@ namespace ProfessionalCSharp.Services
             bool isZero;
             int i;
 
-            i = 10;
-            if(i == 0)
+            Console.WriteLine("Please enter a number");
+            string userNumber = Console.ReadLine();
+
+            if (int.TryParse(userNumber, out i))
             {
-                isZero = true;
-                Console.WriteLine("i is zero");
+                if (i == 0)
+                {
+                    isZero = true;
+                    Console.WriteLine("i is zero");
+                }
+                else
+                {
+                    isZero = false;
+                    Console.WriteLine("i is non-zero");
+                }
             }
             else
             {
-                isZero = false;
-                Console.WriteLine("i is non-zero");
+                Console.WriteLine("Please enter a valid number");
             }
+            
         }
     }
 }
