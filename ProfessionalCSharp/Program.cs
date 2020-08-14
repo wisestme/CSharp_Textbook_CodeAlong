@@ -11,6 +11,9 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            Conditionals conditionals = new Conditionals();
+            conditionals.ImplementIfElse();
+
             snippet1.variables();
 
             ScopeClashes.TestScoping();
