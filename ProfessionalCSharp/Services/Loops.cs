@@ -38,5 +38,16 @@ namespace ProfessionalCSharp.Services
                 i--;
             }
         }
+
+        public void ImplementDoWhile()
+        {
+            int i = 20;
+            do
+            {
+                Console.WriteLine($"{i} in a do while loop");
+                i -= 2;
+            }
+            while (i > 10);
+        }
     }
 }
