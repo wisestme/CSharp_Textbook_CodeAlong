@@ -11,9 +11,12 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+
             Conditionals conditionals = new Conditionals();
             conditionals.ImplementIfElse();
             conditionals.ImplementIfElseIf();
+            conditionals.ImplementSwitch();
+            conditionals.InteractiveSwitch();
 
             snippet1.variables();
 
