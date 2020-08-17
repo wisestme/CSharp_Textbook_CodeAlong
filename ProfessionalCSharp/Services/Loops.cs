@@ -49,5 +49,15 @@ namespace ProfessionalCSharp.Services
             }
             while (i > 10);
         }
+
+        public void ImplementForEach()
+        {
+            int[] arrayInts = {30, 40, 70, 20, 50 };
+
+            foreach (int num in arrayInts)
+            {
+                Console.WriteLine(num);
+            }
+        }
     }
 }
