@@ -13,6 +13,8 @@ namespace ProfessionalCSharp
         {
             Loops loops = new Loops();
             loops.ImplementForLoop();
+            loops.NestedForLoop();
+            
 
             Conditionals conditionals = new Conditionals();
             conditionals.ImplementIfElse();
