@@ -35,5 +35,23 @@ namespace ProfessionalCSharp.Services
             }
             
         }
+
+        public void ImplementIfElseIf()
+        {
+            Console.WriteLine("Please enter some characters");
+
+            string characters = Console.ReadLine();
+
+            if (characters == "")
+            {
+                Console.WriteLine("You did not enter any character");
+            }
+            else if (characters.Length < 5)
+                Console.WriteLine("The Characters you entered are less than 5");
+            else if (characters.Length >= 5 && characters.Length < 10)
+                Console.WriteLine("The characters you entered are from 5 to 9");
+            else if (characters.Length >= 10)
+                Console.WriteLine("The characters you entered are from 10 and above");
+        }
     }
 }

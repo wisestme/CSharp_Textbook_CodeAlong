@@ -13,6 +13,7 @@ namespace ProfessionalCSharp
         {
             Conditionals conditionals = new Conditionals();
             conditionals.ImplementIfElse();
+            conditionals.ImplementIfElseIf();
 
             snippet1.variables();
 
