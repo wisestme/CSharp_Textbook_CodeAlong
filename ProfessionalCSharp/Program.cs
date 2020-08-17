@@ -14,7 +14,7 @@ namespace ProfessionalCSharp
             Loops loops = new Loops();
             loops.ImplementForLoop();
             loops.NestedForLoop();
-            
+            loops.ImplementWhileLoop();
 
             Conditionals conditionals = new Conditionals();
             conditionals.ImplementIfElse();

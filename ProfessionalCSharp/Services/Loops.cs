@@ -27,5 +27,16 @@ namespace ProfessionalCSharp.Services
                 Console.WriteLine();
             }
         }
+
+        public void ImplementWhileLoop()
+        {
+            int i = 20;
+
+            while(i > 10)
+            {
+                Console.WriteLine(i);
+                i--;
+            }
+        }
     }
 }
