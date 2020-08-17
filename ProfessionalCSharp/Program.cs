@@ -11,6 +11,8 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            Loops loops = new Loops();
+            loops.ImplementForLoop();
 
             Conditionals conditionals = new Conditionals();
             conditionals.ImplementIfElse();
