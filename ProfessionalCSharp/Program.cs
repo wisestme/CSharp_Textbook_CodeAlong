@@ -11,6 +11,9 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            MobilePhone mobilePhone = new MobilePhone();
+            mobilePhone.GetPhones("Samsung");
+
             Loops loops = new Loops();
             loops.ImplementForLoop();
             loops.NestedForLoop();

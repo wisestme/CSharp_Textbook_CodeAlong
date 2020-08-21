@@ -16,14 +16,16 @@ namespace ProfessionalCSharp
 
 
 
-        public void GetPhones()
+        public void GetPhones(string phoneBrand)
         {
            var GalaxyS8 = new MobilePhone();
             GalaxyS8.PhoneModel = "SM-G900DS";
-            GalaxyS8.MarketName = "Samsung Galaxy S8";
+            GalaxyS8.MarketName = "Galaxy S8";
             GalaxyS8.IMEI = "358098882300987";
             GalaxyS8.SerialNumber = "SM09DRS00G";
             GalaxyS8.ReleaseDate = "20 / 02 / 2017";
+
+            Console.WriteLine($"Your phone is a {phoneBrand} {GalaxyS8.MarketName} {GalaxyS8.PhoneModel}");
         }
         
     }
