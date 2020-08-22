@@ -11,6 +11,8 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            ManipulateMath.Execute();
+
             MobilePhone mobilePhone = new MobilePhone();
             mobilePhone.GetPhones("Samsung");
 
