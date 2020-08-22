@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProfessionalCSharp.Services
 {
-    public class Math
+    interface IMath
+    {
+        int GetSquare();
+    }
+    public class Math : IMath
     {
         public int Value { get; set; }
         public int GetSquare()

@@ -11,6 +11,10 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            OverloadMethod overload = new OverloadMethod();
+            overload.DisplayResult("Test overload of string");
+            overload.DisplayResult(20);
+
             ManipulateMath.Execute();
 
             MobilePhone mobilePhone = new MobilePhone();
