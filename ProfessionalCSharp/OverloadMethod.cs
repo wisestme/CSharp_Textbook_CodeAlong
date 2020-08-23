@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProfessionalCSharp
 {
-    class OverloadMethod
+    public class OverloadMethod
     {
         public void DisplayResult(string result)
         {
@@ -17,5 +17,20 @@ namespace ProfessionalCSharp
         {
             Console.WriteLine($"This is an int result = {result}");
         }
+
+        public int DoSomething(int x)
+        {
+            return DoSomething(x, 10);
+        }
+
+        public int DoSomething(int x, int y)
+        {
+            int done = x + y;
+            Console.WriteLine(done);
+            return done;
+        }
+
+        
+       
     }
 }

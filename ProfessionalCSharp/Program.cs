@@ -11,6 +11,9 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            OverloadMethod result = new OverloadMethod();
+            result.DoSomething(5);
+
             OverloadMethod overload = new OverloadMethod();
             overload.DisplayResult("Test overload of string");
             overload.DisplayResult(20);
