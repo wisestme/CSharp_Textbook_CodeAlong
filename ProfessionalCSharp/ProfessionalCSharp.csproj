@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Color.cs" />
     <Compile Include="MobilePhone.cs" />
     <Compile Include="OverloadMethod.cs" />
     <Compile Include="Program.cs" />
@@ -50,8 +51,10 @@
     <Compile Include="Services\Conditionals.cs" />
     <Compile Include="Services\Loops.cs" />
     <Compile Include="Services\Math.cs" />
+    <Compile Include="Services\PhoneConstructor.cs" />
     <Compile Include="Services\ScopeClashes.cs" />
     <Compile Include="Services\snippet1.cs" />
+    <Compile Include="UserPreference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

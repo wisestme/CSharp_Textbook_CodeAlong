@@ -11,6 +11,12 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            Console.WriteLine(UserPreference.BackColor);
+
+            PhoneConstructor myPhone = new PhoneConstructor("Samsung", 3);
+            Console.WriteLine("Test");
+            Console.WriteLine(myPhone);
+
             OverloadMethod result = new OverloadMethod();
             result.DoSomething(5);
 
