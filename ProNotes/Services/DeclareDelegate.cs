@@ -15,6 +15,7 @@ namespace ProNotes.Services
             NumberInOutDelegate callSquareOperation = MathOperation.Square;
             NumberInOutDelegate callCube = MathOperation.Cube;
             NumberInOutDelegate callDouble = MathOperation.Double;
+            NumberInOutDelegate getAge = MathOperation.CalcAge;
 
             int fiveSquare = callSquareOperation(5);
             Console.WriteLine($"The square of 5 is {fiveSquare}");
@@ -24,9 +25,10 @@ namespace ProNotes.Services
 
             int doubleFive = callDouble(5);
             Console.WriteLine($"The double of 5 is {doubleFive}");
-        }
-       
 
+            int myAge = getAge(1987);
+            Console.WriteLine($"My age is {myAge} years");
+        }
     }
 
     public class MathOperation
@@ -44,6 +46,14 @@ namespace ProNotes.Services
         public static int Double (int x)
         {
             return x * 2;
+        }
+
+        public static int CalcAge (int DateOfBirth)
+        {
+            int age;
+            //DateOfBirth = 1987;
+            age = DateTime.Now.Year - DateOfBirth;
+            return age;
         }
     }
 }
