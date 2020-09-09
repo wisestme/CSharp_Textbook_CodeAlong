@@ -10,7 +10,7 @@ namespace ProfessionalCSharp.Services
     {
         int GetSquare();
     }
-    public class Math : IMath
+    public class MathApp : IMath
     {
         public int Value { get; set; }
         public int GetSquare()
@@ -22,6 +22,11 @@ namespace ProfessionalCSharp.Services
         {
             return x * x;
         }
+       
+        //internal static double Sqrt(double v)
+        //{
+            
+        //}
 
         public static double GetPi()
         {
@@ -33,11 +38,11 @@ namespace ProfessionalCSharp.Services
     {
         public static void Execute()
         {
-            Console.WriteLine($"Pi is {Math.GetPi()}");
-            int r = Math.GetSquareOf(5);
+            Console.WriteLine($"Pi is {MathApp.GetPi()}");
+            int r = MathApp.GetSquareOf(5);
             Console.WriteLine($"The square of 5 is {r}");
 
-            var math = new Math();
+            var math = new MathApp();
             math.Value = 6;
             Console.WriteLine($"The square of {math.Value} is {math.GetSquare()}");
         }

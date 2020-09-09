@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDemo", "ClassDemo\Clas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfessionalCSharp", "ProfessionalCSharp\ProfessionalCSharp.csproj", "{1D25B950-9E63-4B94-B594-8CFEB72A401B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProNotes", "ProNotes\ProNotes.csproj", "{337B516A-E15A-40F9-BB23-F757A94C54CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D25B950-9E63-4B94-B594-8CFEB72A401B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D25B950-9E63-4B94-B594-8CFEB72A401B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D25B950-9E63-4B94-B594-8CFEB72A401B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337B516A-E15A-40F9-BB23-F757A94C54CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337B516A-E15A-40F9-BB23-F757A94C54CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337B516A-E15A-40F9-BB23-F757A94C54CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337B516A-E15A-40F9-BB23-F757A94C54CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

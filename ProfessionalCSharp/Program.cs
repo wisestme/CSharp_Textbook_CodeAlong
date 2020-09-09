@@ -11,6 +11,10 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
+            
+            FurnitureStruct furniture = new FurnitureStruct();
+            furniture.implementFurnitureStruct();
+            
             Console.WriteLine(UserPreference.BackColor);
 
             PhoneConstructor myPhone = new PhoneConstructor("Samsung", 3);
