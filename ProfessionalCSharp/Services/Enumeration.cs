@@ -27,6 +27,22 @@ namespace ProfessionalCSharp.Services
             Console.WriteLine(number);
         }
 
-        
+        [Flags]
+        public enum DaysOfWeek
+        {
+            Monday = 0x1,
+            Tuesday = 0x2,
+            Wednesday = 0x4,
+            Thursday = 0x8,
+            Friday = 0x10,
+            Saturday = 0x20,
+            Sunday = 0x40
+        }
+
+        public void WeekDays()
+        {
+            DaysOfWeek mondayAndWednesdayAndThursday = DaysOfWeek.Monday | DaysOfWeek.Wednesday | DaysOfWeek.Thursday;
+            Console.WriteLine(mondayAndWednesdayAndThursday);
+        }
     }
 }

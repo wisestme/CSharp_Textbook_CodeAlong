@@ -14,6 +14,7 @@ namespace ProfessionalCSharp
 
             Enumeration enumeration = new Enumeration();
             enumeration.ColorSamples();
+            enumeration.WeekDays();
 
             FurnitureStruct furniture = new FurnitureStruct();
             furniture.implementFurnitureStruct();
