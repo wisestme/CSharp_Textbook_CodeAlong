@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProfessionalCSharp\ProfessionalCSharp.csproj">
+      <Project>{1D25B950-9E63-4B94-B594-8CFEB72A401B}</Project>
+      <Name>ProfessionalCSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

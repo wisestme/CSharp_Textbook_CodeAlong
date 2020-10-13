@@ -11,7 +11,10 @@ namespace ProfessionalCSharp
     {
         static void Main()
         {
-            
+
+            Enumeration enumeration = new Enumeration();
+            enumeration.ColorSamples();
+
             FurnitureStruct furniture = new FurnitureStruct();
             furniture.implementFurnitureStruct();
             

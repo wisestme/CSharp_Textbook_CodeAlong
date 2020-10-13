@@ -11,6 +11,8 @@ namespace ProNotes
     {
         static void Main(string[] args)
         {
+            
+            
             DeclareDelegate declareDelegate = new DeclareDelegate();
             declareDelegate.ImplementDelegate();
             
